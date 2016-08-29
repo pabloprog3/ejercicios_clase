@@ -18,7 +18,7 @@ abstract class FiguraGeometrica
 	}
 
 
-	function __construct(argument)
+	function __construct()
 	{
 		# code...
 	}
@@ -28,7 +28,7 @@ abstract class FiguraGeometrica
 
 	}
 
-	public abstract function DevolverDatos()
+	protected abstract function DevolverDatos()
 	{
 
 	}
