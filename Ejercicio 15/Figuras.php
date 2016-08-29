@@ -54,6 +54,8 @@ class Triangulo extends FiguraGeometrica
 		$this->_altura = $h;
 		$this->_base = $b;
 	}
+}
+
 
 class Rectangulo extends FiguraGeometrica
 
@@ -77,10 +79,6 @@ class Rectangulo extends FiguraGeometrica
 	
 
 
-
-
-
-}
 
 
 
