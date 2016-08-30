@@ -1,1 +1,11 @@
-//Primero testear la clase antes de armar la estructura de la clase
+CLASE 2: 29/08/2016
+
+--Primero testear la clase antes de armar la estructura de la clase
+
+--Incluir archivos:
+					*)include o include_once: agregar 1 o ùnica vez, devuelve warning
+				   **)requiere o requiere_once: devuelve Fatal error. El requiere_once se va a usar siempre para las clases
+
+
+
+--Funcion die(): mata el código php en cualquier parte.				   

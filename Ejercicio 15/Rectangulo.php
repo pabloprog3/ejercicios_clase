@@ -1,7 +1,9 @@
 
 <?php
 
-class Rectangulo extends FiguraGeometrica
+requiere_once ('FiguraGeometrica.php');
+
+class Rectangulo extends FigurasGeometricas
 
 {
 

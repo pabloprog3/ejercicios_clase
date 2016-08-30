@@ -1,3 +1,4 @@
+
 <html>
 <head>
 	<title>Figuras Geometricas -- Ejercicio 15</title>
@@ -5,9 +6,16 @@
 <body>
 
 	<?php
-		include('FiguraGeometrica');
+		include('Rectangulo.php');
+
+		
+
 
 	?>
 
 </body>
 </html>
+
+
+
+

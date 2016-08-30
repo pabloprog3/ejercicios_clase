@@ -1,7 +1,7 @@
 
 <?php
 
-include ('FiguraGeometrica.php');
+requiere_once ('FiguraGeometrica.php');
 
 class Triangulo extends FiguraGeometrica
 {

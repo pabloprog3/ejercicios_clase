@@ -1,6 +1,6 @@
 <?php
 
-abstract class FiguraGeometrica
+abstract class FigurasGeometricas
 {
 	
 	protected $_color;
@@ -20,7 +20,7 @@ abstract class FiguraGeometrica
 
 	function __construct()
 	{
-		# code...
+		$this->CalcularDatos();
 	}
 
 	public abstract function Dibujar()
@@ -28,14 +28,16 @@ abstract class FiguraGeometrica
 
 	}
 
-	protected abstract function DevolverDatos()
+	protected function CalcularDatos($p, $s)
 	{
+		$this->_perimetro = $p;
+		$this->_superficie = $s;
 
 	}
 
 	public function toString()
 	{
-		
+		echo "hoLA";
 	}
 
 }
@@ -43,38 +45,8 @@ abstract class FiguraGeometrica
 /**
 * 
 */
-class Triangulo extends FiguraGeometrica
-{
-
-	private $_altura;
-	private $_base;
-	
-	function __construct($b, $h)
-	{
-		$this->_altura = $h;
-		$this->_base = $b;
-	}
-}
 
 
-class Rectangulo extends FiguraGeometrica
-
-{
-
-	private $_ladoUno;
-	private $_ladoDos;
-
-
-	
-	function __construct($l1, $l2)
-	{
-		$this->_ladoUno = $l1;
-		$this->_ladoDos = $l2;
-	}
-
-
-
-}
 
 	
 
