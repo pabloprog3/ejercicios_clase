@@ -4,19 +4,20 @@
 </head>
 <body>
 	
-	<form>
+	<form  action="destino.php">
 		<input type="submit">
 		<br>
 		<label>Nombre:</label>
 		<input type="text" placeholder="Ingrese aqui su nombre" name="nombre"> </input>
 		<br>
 		<input type="text" name="numerouno"></input>
+		<br>
+		<br>
 
 	</form>
 
 </body>
 </html>
-
 
 <?php
 
