@@ -9,7 +9,7 @@ abstract class FigurasGeometricas
 
 	public function getColor()
 	{
-		return $this->_color
+		return $this->_color;
 	}
 
 	public function setColor($unColor)
@@ -23,10 +23,7 @@ abstract class FigurasGeometricas
 		$this->CalcularDatos();
 	}
 
-	public abstract function Dibujar()
-	{
-
-	}
+	public abstract function Dibujar();
 
 	protected function CalcularDatos($p, $s)
 	{

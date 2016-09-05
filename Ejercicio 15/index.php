@@ -8,8 +8,8 @@
 	<?php
 		include('Rectangulo.php');
 
-		
-
+		$rectangulo = new Rectangulo(2, 3);
+		$rectangulo->toString();
 
 	?>
 

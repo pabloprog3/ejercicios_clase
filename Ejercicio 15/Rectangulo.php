@@ -1,12 +1,10 @@
 
 <?php
 
-requiere_once ('FiguraGeometrica.php');
+require_once ('FiguraGeometrica.php');
 
 class Rectangulo extends FigurasGeometricas
-
 {
-
 	private $_ladoUno;
 	private $_ladoDos;
 
@@ -18,7 +16,10 @@ class Rectangulo extends FigurasGeometricas
 		$this->_ladoDos = $l2;
 	}
 
-
+	public function Dibujar()
+	{
+		
+	}
 
 }
 
