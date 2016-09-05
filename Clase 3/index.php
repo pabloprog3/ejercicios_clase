@@ -2,11 +2,12 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 	<link rel="stylesheet" type="text/css" href="animacion.css">
+
 	<title>Clase 3 - Pasar datos</title>
 
 </head>
 <body>
-	<div class="CajaInicio">
+	<div class="CajaInicio animated flash">
 	<form  action="destino.php" method="post" id="FormIngreso">
 		
 		<label>Nombre:</label>
