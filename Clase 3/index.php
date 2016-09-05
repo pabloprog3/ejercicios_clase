@@ -4,7 +4,7 @@
 </head>
 <body>
 	
-	<form  action="destino.php">
+	<form  action="destino.php" method="post">
 		<input type="submit">
 		<br>
 		<label>Nombre:</label>
@@ -26,7 +26,7 @@
 /*echo var_dump($_GET);
 echo "<br><br>";
 echo var_dump($_GET["nombre"]);
-*/
+
 if(isset($_GET["nombre"]))
 {
 	echo $_GET["nombre"];
@@ -36,5 +36,5 @@ else
 	echo "Ingreso primero";
 }
 
-
+*/
 ?>
