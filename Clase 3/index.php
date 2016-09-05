@@ -1,20 +1,26 @@
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="animacion.css">
 	<title>Clase 3 - Pasar datos</title>
+
 </head>
 <body>
-	
-	<form  action="destino.php" method="post">
-		<input type="submit">
-		<br>
+	<div class="CajaInicio">
+	<form  action="destino.php" method="post" id="FormIngreso">
+		
 		<label>Nombre:</label>
 		<input type="text" placeholder="Ingrese aqui su nombre" name="nombre"> </input>
 		<br>
+		<br>
 		<input type="text" name="numerouno"></input>
+		<br>
+		<input type="submit" class="MiBotonUTN">
 		<br>
 		<br>
 
 	</form>
+</div>
 
 </body>
 </html>
