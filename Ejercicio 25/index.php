@@ -1,3 +1,4 @@
+<!--
 <html>
 <head>
 	<title>Ejercicio 25</title>
@@ -24,7 +25,7 @@
 <?php
 
 //var_dump($_POST);
-
+/*
 if(isset($_POST["base"]) !== "" && isset($_POST["altura"]) !== "")
 {
     $base = $_POST["base"]; 
@@ -36,11 +37,34 @@ if(isset($_POST["base"]) !== "" && isset($_POST["altura"]) !== "")
 	echo "EL RESULTADO ES: $resultado";
 }
 
-
-
-
-
-
-
-
+*/
 ?>
+
+!-->
+
+<html>
+<head>
+	<title>Ejercicio 25</title>
+</head>
+<body>
+
+	<form action="destino.php" method="post">
+
+		<label>Base:</label>
+		<input type="text" placeholder:"Ingrese aqui la base" name="base"></input>
+		<br>
+		<br>
+		<label>Altura:</label>
+		<input type="text" placeholder:"Ingrese aqui la altura" name="altura"></input>
+		<br>
+		<br>
+		<input type="submit" value="Calcular en otra pagina"></input>
+
+	</form>
+
+</body>
+</html>
+
+
+
+
