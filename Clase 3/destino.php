@@ -19,7 +19,7 @@ else
 }
 */
 /
-if(isset($_POST["nombre"]))
+if(isset($_POST["nombre"] !== null))
 {
 	echo $_POST["nombre"];
 }
