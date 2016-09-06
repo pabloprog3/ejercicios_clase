@@ -1,3 +1,13 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<title>pagina destino</title>
+</head>
+<body>
+
+</body>
+</html>
+
 <?php
 
 	if(isset($_POST["base"]) !== "" && isset($_POST["altura"]) !== "")
