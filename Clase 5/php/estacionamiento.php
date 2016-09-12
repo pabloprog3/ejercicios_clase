@@ -18,6 +18,21 @@ class Estacionamiento
 	}
 
 
+	public static function Leer()
+	{
+		$listadoDeAutos=array();
+		//$listaDeAutosLeidas["primerElemento"];//agregar elemento al array
+
+		$archivo=fopen("estacionados.txt", "r");
+		while(!FeoF($archivo))
+		{
+			$renglon=fgets($archivo);//lectura linea a linea
+			$listadoDeAutos[]=$renglon;
+		}
+		fclose($archivo);
+
+		return $listadoDeAutos;
+	}
 
 
 }

@@ -10,7 +10,10 @@ include_once("php/estacionamiento.php");
 if($_POST["ingresar"]=="ingresar")
 {
 	$patente = $_POST["texto"];
-	Estacionamiento::Guardar($patente);
+	//Estacionamiento::Guardar($patente);
+	$miListado=Estacionamiento::Leer();
+	var_dump($miListado);
+	
 	echo "ingreso correcto";
 }
 else
