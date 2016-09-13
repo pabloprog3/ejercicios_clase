@@ -1,23 +1,27 @@
 <?php
 
 
-include_once("php/estacionamiento.php");
+include("php/estacionamiento.php");
 //$variableTexto = $_POST['texto'];
 
 //var_dump($_POST);
 
 //echo "$variableTexto";
-if($_POST["ingresar"]=="ingresar")
+if(isset($_POST['Ingresar']))
 {
 	$patente = $_POST["texto"];
-	//Estacionamiento::Guardar($patente);
-	$miListado=Estacionamiento::Leer();
-	var_dump($miListado);
-	
+	Estacionamiento::Guardar($patente);
+	//$miListado=Estacionamiento::Leer();
+
+	//var_dump($miListado);
+
 	echo "ingreso correcto";
 }
-else
-	echo "salir correcto";
+
+else{
+	//var_dump($_POST["texto"]);
+	Estacionamiento::SacarAuto($_POST["texto"]);
+}
 
 
 ?>

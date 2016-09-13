@@ -10,11 +10,11 @@
 
 <div class="CajaUno">
 
-	<input  type="text" name="texto" id="texto">	</input>
+	<input  type="text" name="texto" id="texto"> </input>
 	<br><br>
-	<input class="MiBotonUTNJuego" type="submit" value="ingresar" name="ingresar" id="ingreso"></input>
+	<input class="MiBotonUTNJuego" type="submit" value="ingresar" name="Ingresar"></input>
 	<br>
-	<input class="MiBotonUTNJuego" type="submit" value="salir" name="salida"></input>
+	<input class="MiBotonUTNJuego" type="submit" value="salir" name="Salida"></input>
 
 </div>
 
