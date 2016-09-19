@@ -46,6 +46,7 @@ class Estacionamiento
 			if($patente == $auto[0])
 			{
 				$ahora=date("Y-m-d H:i:s");
+				var_dump($auto);
 				$diferencia = strtotime($ahora) - strtotime($auto[1]);
 				echo "Tiempo transcurrido $diferencia";
 
