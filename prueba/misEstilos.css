@@ -1,0 +1,74 @@
+#body{
+
+	text-align: center;
+	background-color: rgb(20,80, 200);
+	padding: 20px;
+	border-right-style: thick;
+	border-top: thick;
+	border-left: groove;
+	border-bottom: thick;
+	border-color: rgb(40, 40, 40);
+	border-radius: 50px;
+	font-size: 20px;
+    font-family: fantasy;
+    float: left;
+    color: rgb(20, 250, 250);
+    background-attachment: scroll;
+	background-image: url(imagenbody.jpg);
+    box-shadow: rgb(150, 150, 150) 5px 5px 5px 5px;
+    /*-webkit-transform: skew(30deg);*/
+    /*-webkit-transform: translate(0px);
+    display: inline-table;*/
+    -webkit-filter: brightness(0.5);
+    background-size: cover;
+    line-height: 10px 10px;
+
+   /* font-family: fantasy;*/
+
+}
+
+.BotonPersonal
+{
+	background: -webkit-linear-gradient(top,#fc6,#f63);
+	border-bottom-right-radius: 30px;
+	vertical-align: baseline; 	
+	font-size: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	 /*color:#FFF;*/
+	/* background-color: rgb(109	, 100, 30);*/
+	border-style: none;
+	cursor: pointer;
+	font-variant: small-caps;
+   /* box-shadow: 30px 30px 30px 20px;*/
+    text-align: justify;
+
+    
+}
+.BotonPersonal:hover
+{
+	background: scroll;
+	/*background-color: rgb(30, 190, 200);*/
+	background-color: #0B517A; 
+}
+.BotonPersonal:active
+{
+	background: scroll;
+	background: -webkit-linear-gradient(bottom, #33FF4C, #555555);
+	/*background-color: rgb(30, 190, 200);*/
+	/*background-color:  #33FF4C;*/
+
+}
+
+
+#registrarse:hover
+{
+	background: scroll;
+	background-color:#F13D5B; 
+}
+#registrarse:active
+{
+	background: scroll;
+	/*background-color: #33FF4C; */
+	background: -webkit-linear-gradient(bottom, #33FF4C, #555555);
+}
