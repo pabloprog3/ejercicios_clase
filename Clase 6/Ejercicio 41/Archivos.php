@@ -1,27 +1,22 @@
 <?php
 
-class Archivos
-{
 
-	var $listaArchivos=array();
+Class Archivos
+{
 
 	public static function GuardarArchivos()
 	{
-		$rutaArchivoTMP=$_FILES['archivos']['tmp_name'];
-
-		$nombreArchivo=$_FILES['archivos']['name'];
-		$rutaDestino="Uploads/$nombreArchivo";
-
-		$dividirArchivo = explode('.', $nombreArchivo);
-		$tipoArchivo=strtolower($dividirArchivo[1]);
+		//var_dump($_FILES);
+		 $nombreArchivo=$_FILES['archivos'] ['name'];
+ 		 $rutaArchivoTMP=$_FILES['archivos'] ['tmp_name'];
+ 		 $rutaDestino="Uploads/$nombreArchivo";
+ 		 $dividirArchivo=explode('.', $nombreArchivo);
+ 		 $tipoArchivo=strtolower($dividirArchivo[1]);
 
 		if($tipoArchivo == 'doc' || $tipoArchivo=='docx')
 		{
 			if($_FILES['archivos']['size'] <= 61440)
 			{
-				$listaArchivos[0]=$nombreArchivo;
-				$listaArchivos[1]=$tipoArchivo;
-				$listaArchivos[2]=$_FILES['archivos']['size'];
 				move_uploaded_file($rutaArchivoTMP, $rutaDestino);
 				return 1;
 			}
@@ -38,10 +33,7 @@ class Archivos
 			{
 				if($_FILES['archivos']['size'] <= 800000)
 				{
-					$listaArchivos[0]=$nombreArchivo;
-					$listaArchivos[1]=$tipoArchivo;
-					$listaArchivos[2]=$_FILES['archivos']['size'];
-					move_uploaded_file($nombreArchivo, $rutaDestino);
+					move_uploaded_file($rutaArchivoTMP, $rutaDestino);
 					return 1;
 				}
 				else
@@ -54,10 +46,7 @@ class Archivos
 			{
 				if($_FILES['archivos']['size'] <= 512000)
 				{
-					$listaArchivos[0]=$nombreArchivo;
-					$listaArchivos[1]=$tipoArchivo;
-					$listaArchivos[2]=$_FILES['archivos']['size'];
-					move_uploaded_file($nombreArchivo, $rutaDestino);
+					move_uploaded_file($rutaArchivoTMP, $rutaDestino);
 					return 1;
 				}
 				else
@@ -71,10 +60,15 @@ class Archivos
 
 
 
-	public static function GenerarSalida($listaArchivos)
+	public static function GenerarSalida()
 	{
+		$nombreArchivo=$_FILES['archivos'] ['name'];
+ 		$dividirArchivo=explode('.', $nombreArchivo);
+ 		$tipoArchivo=strtolower($dividirArchivo[1]);
+ 		$tamanio=$_FILES['archivos']['size'];
 
-		var_dump($listaArchivos);
+ 		echo "<br>Nombre: $nombreArchivo<br>Tipo archivo: $tipoArchivo<br>Tamañio: $tamanio";
+ 		
 	}
 
 
