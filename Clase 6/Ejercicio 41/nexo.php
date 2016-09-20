@@ -3,9 +3,12 @@
 require_once 'Archivos.php';
 
 	if(Archivos::GuardarArchivos()==1)
-		echo "Guardo bien";
+	{
+		echo "Se guardo correctamente el archivo <br><br>";
+		Archivos::GenerarSalida();
+	}
 	else
-		echo "No guardo";
+		echo "No se guardar";
 
 
 
