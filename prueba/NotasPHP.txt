@@ -1,0 +1,92 @@
+EVALUAR:
+1) ==, evalua si son los mismos valores.
+2) ===, ademàs de si son los mismos valores tambien evalua si son del mismo tipo de datos.
+
+INSTRUCIONES DE CONTROL Y MATRICES:
+
+1) foreach($matriz as $valor)
+{
+	
+}
+
+2) foreach($matriz as $clave => $valor)
+{
+
+}
+
+3) count($matriz): devuelve la cantidad de elementos
+
+4) $_POST["name_del_html"]; los mismo para las demas matrices globales como $_GET
+
+4)
+
+
+
+
+ARCHIVOS DE TEXTO:
+
+1) Modos de apertura:
+	a) "r": abre el archivo para lectura
+	b) "w": abre para escribir, reemplaza el contenido anterior, si no existe intentara crearlo
+	c) "a": abre para añadir datos al final del archivo, si no existe crea el archivo
+	d) "r+" abre para añadir datos al principio y ademàs permite leerlos
+	e) "w+": abre para escribir y luego leer. Si el archivo existìa, borra el contenido. Si no existìa, lo crea vacìo.
+	f) "a+": abre para agregar datos al final y leer sin eliminar el contenido. Si el archivo no existe, lo crea.
+
+
+2) $archivo = fopen("archivo");
+
+3) while(!feof($archivo)
+{
+
+}
+
+4) fclose($archivo);
+
+5) $fila = file("ruta");//convierte cada linea del archivo en una celda de una matriz $fila
+
+6) fpassthru(fopen("archivo", "r")): muestra en la pagina el contenido completo del archivo. No necesito echo
+
+7) fread($archivo, num): lee la cantidad de num caracteres de $archivo.
+
+8)fgetc($archivo): devuelve un solo caracter. Se puede utilizar para leer el archivo caracter por caracter hasta que aparezca un 
+determinado caracter.
+
+9) fgets($archivo, num): lee exclusivamente dentro de una ùnica linea del archivo y lee num- 1
+
+10) fgetss($archivo, num): es igual a fgets pero omite los tags html y de php que se encuentren dentro del archivo.
+
+11) fputs($archivo, $texto): inserta $texto en $archivo
+
+12) fwrite($archivo, $texto): escribe $texto en $archivo
+
+
+
+FUNCIONES PARA MANEJO DE CARACTERES:
+
+1)trim($cadena): elimina los caracteres de control al principio y al final.
+2)ltrim($cadena): igual que trim pero al principio/izquierda.
+3)rtrim o chop($cadena): igual que trim pero al final/derecha.
+4)strtolower($cadena): convierte la cadena a minusculas.
+5)strtoupper($cadena): convierte la cadena a mayusculas.
+6)strlen($cadena): devuelve la cantidad de letras de la cadena.
+
+7)substr($cadena, num1, num2): devuelve num2 caracteres a partir del caracter num1. num2 se puede omitir y se considerara hasta
+el final de la cadena. si num1 es negativo, se cuenta desde atras hacia delante hasta llegar a num1. Si num1 es positivo y
+num2 negativo, entonces a partir de num1 se cuenta num2 caracteres contando desde el final de la cadena.
+
+8)strpos($cadena, $buscar): devuelve la posicion en que se encuentra $buscar (por primera vez) en la cadena.
+9)strstr($cadena, $caracter): devuelve toda la cadena del texto hasta el final a partir del caracter especificado (inclusive).
+10)preg_match(/caracter/i, $cadena): utiliza expresiones regulares.Envuelve el caracter a buscar dentro de las barras. Devuelve true 
+o false. La i es un modificador que indica que no importa si es minuscula o mayuscula.
+11)str_replace($buscar, $reemplazo,$cadena): busca y reemplaza en la cadena.
+12)explode("separador", $cadena): toma la cadena y la convierte a una matriz separando los valores,considerando el separador.
+13)implode("separador", $matriz): convierte la matriz a cadena, considerando el separador.
+
+
+FUNCIONES DE FECHA Y HORA:
+
+1)time(): devuelve la cantidad de segundos pasados desde 01/01/1970 hasta el momento en que se ejecuta. Formato timestanp
+2)date("formato"): formatear fechas y horas.
+3)checkdate($mes, $dia, $año): devuelve true si los datos de la fecha son correctos.
+ 
