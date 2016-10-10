@@ -11,9 +11,9 @@ switch ($queHago) {
 	case 'Login':
 				
 				echo "<br><form method='POST'>
-						<input type='text' placeholder='escriba nombre'/>
+						<input id='user' name='user' type='text' placeholder='escriba nombre'/>
 						<br><br>
-						<input type='text' placeholder='escriba mail'/>
+						<input id='mail' name='mail' type='text' placeholder='escriba mail'/>
 						<br><br>
 						<input type='button' value='Ingresar' onClick='Ingresar()'/>
 						<br><br><br><br>
@@ -24,9 +24,13 @@ switch ($queHago) {
 				 
 		break;
 
+		case 'Ingresar':
+			# code...
+			break;
+
 		case 'Registrarse':
-			     
-				echo "<br><form id='frmReg' method='POST' enctype='multipart/form-data'>
+
+				echo "<br><form id='frmReg' name='frmReg' method='POST' enctype='multipart/form-data'>
 						<input type='text' name='user' id='user' placeholder='escriba nombre'/>
 						<br><br>
 						<input type='text' name='mail' id='mail' placeholder='escriba mail'/>

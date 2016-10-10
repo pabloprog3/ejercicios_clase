@@ -2,6 +2,7 @@ function logearse () {
 	
 	var hacer = $("#btnLogin").val();
 
+
 	$.ajax({
 		//beforSend: function(){
 			//$("#cargandoLogin").innerHTML("Cargando");
@@ -37,6 +38,20 @@ function logearse () {
 }
 
 
+
+function Ingresar()
+{
+		var user = $("#user").val();
+		var mail = $("#mail").val();
+
+		$.ajax({
+
+			url:
+		})
+}
+
+
+
 function registrarse()
 {
 	var hacer = $("#btnReg").val();
@@ -66,10 +81,6 @@ function GuardarUsuario()
 {
 	//alert("apretado");
 
-	var inputFileImage = document.getElementById("foto");
-	var file = inputFileImage.files[0];
-
-	console.info(file);
 
 	var hacer = $("#Guardar").val();
 	//console.info(hacer); no esta definido hacer. Solucion, cambie en nexo.php
@@ -86,6 +97,9 @@ function GuardarUsuario()
 		url: "nexo.php",
 		type: "POST",
 		data: {
+			   contentType:false,
+			   processData:false,
+			   data:formData,
 			   queHacer:hacer,
 			   usuario:usuario,
 			   mail:mail,
