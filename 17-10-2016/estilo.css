@@ -1,0 +1,11 @@
+h2{
+	/*background-position: center;*/
+	text-align: center;
+	text-decoration: blink;
+	background-color: rgb(200, 190, 90);
+	text-transform: capitalize;
+	font-style: oblique;
+	font-weight: bold;
+	box-shadow: 2px 2px #ff0000;
+	
+}
