@@ -1,0 +1,5 @@
+1) PDO -> encapsulado dentro de una clase con un único constructor privado con los datos de instancia de la BD.
+
+2) PDO: Libreria con metodos y atributos estaticos (incluido dentro de PHP)
+
+3) 
