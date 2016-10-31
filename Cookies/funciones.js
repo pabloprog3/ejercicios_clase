@@ -16,8 +16,6 @@ function ingresar() {
 
 	// });
 
-	var data={usuario:usuario, password:password};
-
 	$.ajax(
 		{
 			url:'nexo.php',
@@ -28,9 +26,12 @@ function ingresar() {
 			}
 		})
 	.then(function(resultado){
+		//si funciona ajax
 		alert(resultado);
+		
 	}, 
 		function(resul){
+			//si falla ajax
 			alert(resul);
 		});
 
