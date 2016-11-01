@@ -16,14 +16,19 @@
 </head>
 <body>
 <div  class="jumbotron text-center">
-	<form >
+	<form enctype='multipart-form' method='post'>
 		<input type="text" class="form-control"  placeholder="Ingrese usuario" id="usuario" name="usuario" value=<?php echo $_COOKIE['usuario'] ?> >
-		<br><br>
+		<br>
 		<input type="password" class="form-control" placeholder="Ingrese password" id="password" name="password" >
-		<br><br>
-		<input type="button" onclick="ingresar()" value="Enviar"  class="btn-primary btn-block" >
-
+		<br>
+		<input type="file" id="archivo" name="archivo"> 
+		<br>
+		<input type="button" id="subir" onclick="ingresar()" value="Enviar"  class="btn-primary btn-block" >
 	</form>
+	
+	<div id="imagen">
+		<img src="">
+	</div>
 </div>
 
 </body>

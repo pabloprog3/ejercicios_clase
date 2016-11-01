@@ -1,5 +1,13 @@
 
+function subirFoto () {
+	var imagen = 
+	alert(imagen);
+}
+
+
 function ingresar() {
+
+	subirFoto();
 
 	var usuario = $('#usuario').val();
 	var password = $('#password').val();
